@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7212158F2231C86E00B9993E /* AudioDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7212158E2231C86E00B9993E /* AudioDisplay.swift */; };
+		721215912231D83800B9993E /* runningWaveform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721215902231D83800B9993E /* runningWaveform.swift */; };
+		72121594223B46B800B9993E /* colored_waveform.c in Sources */ = {isa = PBXBuildFile; fileRef = 72121593223B46B800B9993E /* colored_waveform.c */; };
+		72121598223B90ED00B9993E /* libsndfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72121597223B90ED00B9993E /* libsndfile.a */; };
+		72554D79224FF9B5001F0E91 /* SCScrollableWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72554D75224FF9B2001F0E91 /* SCScrollableWaveformView.m */; };
+		72554D7A224FF9B5001F0E91 /* SCWaveformCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 72554D76224FF9B3001F0E91 /* SCWaveformCache.m */; };
+		72554D7B224FF9B5001F0E91 /* SCWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72554D77224FF9B4001F0E91 /* SCWaveformView.m */; };
+		72554D7F225009C4001F0E91 /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72554D7D225009BB001F0E91 /* AudioKitUI.framework */; };
+		72554D80225009C4001F0E91 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72554D7E225009C4001F0E91 /* AudioKit.framework */; };
+		726B2E1F221F6F50007F3A64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726B2E1E221F6F50007F3A64 /* AppDelegate.swift */; };
+		726B2E21221F6F50007F3A64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726B2E20221F6F50007F3A64 /* ViewController.swift */; };
+		726B2E24221F6F50007F3A64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726B2E22221F6F50007F3A64 /* Main.storyboard */; };
+		726B2E26221F6F52007F3A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726B2E25221F6F52007F3A64 /* Assets.xcassets */; };
+		726B2E29221F6F52007F3A64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726B2E27221F6F52007F3A64 /* LaunchScreen.storyboard */; };
+		726B2E31221F7046007F3A64 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 726B2E30221F7046007F3A64 /* Logo.png */; };
+		726B2E3B22223C3F007F3A64 /* bpm.c in Sources */ = {isa = PBXBuildFile; fileRef = 726B2E3A22223C3F007F3A64 /* bpm.c */; };
+		72BABB2022504F67003E7906 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72BABB1D22504F66003E7906 /* Realm.framework */; };
+		72BABB2122504F67003E7906 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72BABB1E22504F66003E7906 /* RealmSwift.framework */; };
+		72BABB2222504F67003E7906 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72BABB1F22504F66003E7906 /* Alamofire.framework */; };
+		72DABCF422235EDA0067443B /* libsox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DABCF322235EDA0067443B /* libsox.a */; };
+		72DABCF622236E2C0067443B /* soxEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DABCF522236E2C0067443B /* soxEncode.m */; };
+		72DABD12222604920067443B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DABD11222604920067443B /* AVFoundation.framework */; };
+		72DABDD2222879850067443B /* parameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABD85222879850067443B /* parameters.cpp */; };
+		72DABDD6222879850067443B /* toneprofiles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABD8B222879850067443B /* toneprofiles.cpp */; };
+		72DABDD9222879850067443B /* chromatransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABD8E222879850067443B /* chromatransform.cpp */; };
+		72DABDDA222879850067443B /* segarbitrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABD8F222879850067443B /* segarbitrary.cpp */; };
+		72DABDE0222879850067443B /* seg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABD97222879850067443B /* seg.cpp */; };
+		72DABDE2222879850067443B /* segcosine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABD99222879850067443B /* segcosine.cpp */; };
+		72DABDE7222879850067443B /* audiodata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABDA0222879850067443B /* audiodata.cpp */; };
+		72DABDEB222879850067443B /* README in Resources */ = {isa = PBXBuildFile; fileRef = 72DABDA6222879850067443B /* README */; };
+		72DABDEF222879850067443B /* segnone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABDAC222879850067443B /* segnone.cpp */; };
+		72DABDF0222879850067443B /* fftadapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABDAD222879850067443B /* fftadapter.cpp */; };
+		72DABDF4222879850067443B /* downsampler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABDB5222879850067443B /* downsampler.cpp */; };
+		72DABDF6222879850067443B /* spectrumanalyser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABDB8222879850067443B /* spectrumanalyser.cpp */; };
+		72DABDFA222879850067443B /* windowfunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABDBD222879850067443B /* windowfunctions.cpp */; };
+		72DABDFE222879850067443B /* chromagram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABDC4222879850067443B /* chromagram.cpp */; };
+		72DABDFF222879850067443B /* chromatransformfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABDC5222879850067443B /* chromatransformfactory.cpp */; };
+		72DABE04222879850067443B /* keyclassifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABDCB222879850067443B /* keyclassifier.cpp */; };
+		72DABE06222879850067443B /* lowpassfilterfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABDCE222879850067443B /* lowpassfilterfactory.cpp */; };
+		72DABE07222879850067443B /* keyfinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABDCF222879850067443B /* keyfinder.cpp */; };
+		72DABE08222879850067443B /* lowpassfilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABDD0222879850067443B /* lowpassfilter.cpp */; };
+		72DABE0B222880C40067443B /* libfftw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DABE0A222880C40067443B /* libfftw3.a */; };
+		72DABE0F2228831F0067443B /* ckey.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72DABE0D2228831E0067443B /* ckey.cpp */; };
+		72DABE102228831F0067443B /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = 72DABE0E2228831F0067443B /* key.c */; };
+		72DABE13222A28B30067443B /* audioMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DABE12222A28B30067443B /* audioMetadata.swift */; };
+		72DABE15222F0C8E0067443B /* MixflameiOS-Background1.png in Resources */ = {isa = PBXBuildFile; fileRef = 72DABE14222F0C8C0067443B /* MixflameiOS-Background1.png */; };
+		72DABE17222F12750067443B /* MixflameiOS-Background3.png in Resources */ = {isa = PBXBuildFile; fileRef = 72DABE16222F12750067443B /* MixflameiOS-Background3.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7212158E2231C86E00B9993E /* AudioDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDisplay.swift; sourceTree = "<group>"; };
+		721215902231D83800B9993E /* runningWaveform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runningWaveform.swift; sourceTree = "<group>"; };
+		72121592223B46B800B9993E /* colored_waveform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = colored_waveform.h; sourceTree = "<group>"; };
+		72121593223B46B800B9993E /* colored_waveform.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = colored_waveform.c; sourceTree = "<group>"; };
+		72121596223B90E300B9993E /* sndfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sndfile.h; path = "../../../../libsndfile-1.0.28/ios-libs/sndfile.h"; sourceTree = "<group>"; };
+		72121597223B90ED00B9993E /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsndfile.a; sourceTree = "<group>"; };
+		72554D73224FF9AF001F0E91 /* SCWaveformCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWaveformCache.h; sourceTree = "<group>"; };
+		72554D74224FF9B1001F0E91 /* SCScrollableWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCScrollableWaveformView.h; sourceTree = "<group>"; };
+		72554D75224FF9B2001F0E91 /* SCScrollableWaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCScrollableWaveformView.m; sourceTree = "<group>"; };
+		72554D76224FF9B3001F0E91 /* SCWaveformCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWaveformCache.m; sourceTree = "<group>"; };
+		72554D77224FF9B4001F0E91 /* SCWaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWaveformView.m; sourceTree = "<group>"; };
+		72554D78224FF9B5001F0E91 /* SCWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWaveformView.h; sourceTree = "<group>"; };
+		72554D7D225009BB001F0E91 /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKitUI.framework; sourceTree = "<group>"; };
+		72554D7E225009C4001F0E91 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		726B2E1B221F6F50007F3A64 /* MixDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		726B2E1E221F6F50007F3A64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		726B2E20221F6F50007F3A64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		726B2E23221F6F50007F3A64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		726B2E25221F6F52007F3A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		726B2E28221F6F52007F3A64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		726B2E2A221F6F52007F3A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		726B2E30221F7046007F3A64 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		726B2E3922223C3F007F3A64 /* bpm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bpm.h; sourceTree = "<group>"; };
+		726B2E3A22223C3F007F3A64 /* bpm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bpm.c; sourceTree = "<group>"; };
+		726B2E3C22223D27007F3A64 /* bpm-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bpm-BridgingHeader.h"; sourceTree = "<group>"; };
+		72BABB1D22504F66003E7906 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		72BABB1E22504F66003E7906 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		72BABB1F22504F66003E7906 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		72DABCF222235ED90067443B /* sox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sox.h; sourceTree = "<group>"; };
+		72DABCF322235EDA0067443B /* libsox.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsox.a; sourceTree = "<group>"; };
+		72DABCF522236E2C0067443B /* soxEncode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = soxEncode.m; sourceTree = "<group>"; };
+		72DABCF7222370740067443B /* soxEncode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soxEncode.h; sourceTree = "<group>"; };
+		72DABCF9222477D30067443B /* lame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = lame.framework; path = "Pods/mp3lame-for-ios/lame.framework"; sourceTree = "<group>"; };
+		72DABD0A222507370067443B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		72DABD11222604920067443B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		72DABD85222879850067443B /* parameters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parameters.cpp; sourceTree = "<group>"; };
+		72DABD87222879850067443B /* chromagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chromagram.h; sourceTree = "<group>"; };
+		72DABD8A222879850067443B /* seg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seg.h; sourceTree = "<group>"; };
+		72DABD8B222879850067443B /* toneprofiles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = toneprofiles.cpp; sourceTree = "<group>"; };
+		72DABD8E222879850067443B /* chromatransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chromatransform.cpp; sourceTree = "<group>"; };
+		72DABD8F222879850067443B /* segarbitrary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = segarbitrary.cpp; sourceTree = "<group>"; };
+		72DABD93222879850067443B /* toneprofiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = toneprofiles.h; sourceTree = "<group>"; };
+		72DABD95222879850067443B /* keyclassifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyclassifier.h; sourceTree = "<group>"; };
+		72DABD97222879850067443B /* seg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = seg.cpp; sourceTree = "<group>"; };
+		72DABD99222879850067443B /* segcosine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = segcosine.cpp; sourceTree = "<group>"; };
+		72DABD9E222879850067443B /* segnone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = segnone.h; sourceTree = "<group>"; };
+		72DABD9F222879850067443B /* fftadapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fftadapter.h; sourceTree = "<group>"; };
+		72DABDA0222879850067443B /* audiodata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audiodata.cpp; sourceTree = "<group>"; };
+		72DABDA3222879850067443B /* windowfunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = windowfunctions.h; sourceTree = "<group>"; };
+		72DABDA4222879850067443B /* binode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = binode.h; sourceTree = "<group>"; };
+		72DABDA6222879850067443B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		72DABDA8222879850067443B /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		72DABDAA222879850067443B /* parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parameters.h; sourceTree = "<group>"; };
+		72DABDAC222879850067443B /* segnone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = segnone.cpp; sourceTree = "<group>"; };
+		72DABDAD222879850067443B /* fftadapter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fftadapter.cpp; sourceTree = "<group>"; };
+		72DABDAE222879850067443B /* keyfinderresult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyfinderresult.h; sourceTree = "<group>"; };
+		72DABDAF222879850067443B /* segcosine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = segcosine.h; sourceTree = "<group>"; };
+		72DABDB1222879850067443B /* lowpassfilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lowpassfilter.h; sourceTree = "<group>"; };
+		72DABDB3222879850067443B /* downsampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = downsampler.h; sourceTree = "<group>"; };
+		72DABDB5222879850067443B /* downsampler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = downsampler.cpp; sourceTree = "<group>"; };
+		72DABDB6222879850067443B /* segarbitrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = segarbitrary.h; sourceTree = "<group>"; };
+		72DABDB8222879850067443B /* spectrumanalyser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spectrumanalyser.cpp; sourceTree = "<group>"; };
+		72DABDBC222879850067443B /* chromatransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chromatransform.h; sourceTree = "<group>"; };
+		72DABDBD222879850067443B /* windowfunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = windowfunctions.cpp; sourceTree = "<group>"; };
+		72DABDBE222879850067443B /* exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exception.h; sourceTree = "<group>"; };
+		72DABDBF222879850067443B /* keyfinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyfinder.h; sourceTree = "<group>"; };
+		72DABDC1222879850067443B /* chromatransformfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chromatransformfactory.h; sourceTree = "<group>"; };
+		72DABDC4222879850067443B /* chromagram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chromagram.cpp; sourceTree = "<group>"; };
+		72DABDC5222879850067443B /* chromatransformfactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chromatransformfactory.cpp; sourceTree = "<group>"; };
+		72DABDC9222879850067443B /* lowpassfilterfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lowpassfilterfactory.h; sourceTree = "<group>"; };
+		72DABDCB222879850067443B /* keyclassifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = keyclassifier.cpp; sourceTree = "<group>"; };
+		72DABDCC222879850067443B /* audiodata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audiodata.h; sourceTree = "<group>"; };
+		72DABDCE222879850067443B /* lowpassfilterfactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lowpassfilterfactory.cpp; sourceTree = "<group>"; };
+		72DABDCF222879850067443B /* keyfinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = keyfinder.cpp; sourceTree = "<group>"; };
+		72DABDD0222879850067443B /* lowpassfilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lowpassfilter.cpp; sourceTree = "<group>"; };
+		72DABDD1222879850067443B /* spectrumanalyser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spectrumanalyser.h; sourceTree = "<group>"; };
+		72DABE09222880B50067443B /* fftw3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fftw3.h; sourceTree = "<group>"; };
+		72DABE0A222880C40067443B /* libfftw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfftw3.a; sourceTree = "<group>"; };
+		72DABE0C2228831E0067443B /* ckey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ckey.h; sourceTree = "<group>"; };
+		72DABE0D2228831E0067443B /* ckey.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ckey.cpp; sourceTree = "<group>"; };
+		72DABE0E2228831F0067443B /* key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = key.c; sourceTree = "<group>"; };
+		72DABE11222884040067443B /* key.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = key.h; sourceTree = "<group>"; };
+		72DABE12222A28B30067443B /* audioMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioMetadata.swift; sourceTree = "<group>"; };
+		72DABE14222F0C8C0067443B /* MixflameiOS-Background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MixflameiOS-Background1.png"; sourceTree = "<group>"; };
+		72DABE16222F12750067443B /* MixflameiOS-Background3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MixflameiOS-Background3.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		726B2E18221F6F50007F3A64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72BABB2022504F67003E7906 /* Realm.framework in Frameworks */,
+				72BABB2122504F67003E7906 /* RealmSwift.framework in Frameworks */,
+				72BABB2222504F67003E7906 /* Alamofire.framework in Frameworks */,
+				72554D80225009C4001F0E91 /* AudioKit.framework in Frameworks */,
+				72554D7F225009C4001F0E91 /* AudioKitUI.framework in Frameworks */,
+				72DABD12222604920067443B /* AVFoundation.framework in Frameworks */,
+				72DABCF422235EDA0067443B /* libsox.a in Frameworks */,
+				72DABE0B222880C40067443B /* libfftw3.a in Frameworks */,
+				72121598223B90ED00B9993E /* libsndfile.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		726B2E12221F6F50007F3A64 = {
+			isa = PBXGroup;
+			children = (
+				726B2E1D221F6F50007F3A64 /* MixDJ */,
+				726B2E1C221F6F50007F3A64 /* Products */,
+				726B2E32221F9DA0007F3A64 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		726B2E1C221F6F50007F3A64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				726B2E1B221F6F50007F3A64 /* MixDJ.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		726B2E1D221F6F50007F3A64 /* MixDJ */ = {
+			isa = PBXGroup;
+			children = (
+				72DABE0A222880C40067443B /* libfftw3.a */,
+				72DABCF322235EDA0067443B /* libsox.a */,
+				72121597223B90ED00B9993E /* libsndfile.a */,
+				72121596223B90E300B9993E /* sndfile.h */,
+				72DABE09222880B50067443B /* fftw3.h */,
+				72DABCF222235ED90067443B /* sox.h */,
+				726B2E3922223C3F007F3A64 /* bpm.h */,
+				726B2E3A22223C3F007F3A64 /* bpm.c */,
+				726B2E3C22223D27007F3A64 /* bpm-BridgingHeader.h */,
+				726B2E1E221F6F50007F3A64 /* AppDelegate.swift */,
+				726B2E20221F6F50007F3A64 /* ViewController.swift */,
+				726B2E22221F6F50007F3A64 /* Main.storyboard */,
+				726B2E25221F6F52007F3A64 /* Assets.xcassets */,
+				726B2E27221F6F52007F3A64 /* LaunchScreen.storyboard */,
+				726B2E2A221F6F52007F3A64 /* Info.plist */,
+				726B2E30221F7046007F3A64 /* Logo.png */,
+				72DABE16222F12750067443B /* MixflameiOS-Background3.png */,
+				72DABCF522236E2C0067443B /* soxEncode.m */,
+				72DABE14222F0C8C0067443B /* MixflameiOS-Background1.png */,
+				72DABCF7222370740067443B /* soxEncode.h */,
+				72DABE0D2228831E0067443B /* ckey.cpp */,
+				72DABE0C2228831E0067443B /* ckey.h */,
+				72DABE0E2228831F0067443B /* key.c */,
+				72DABE11222884040067443B /* key.h */,
+				72DABD84222879850067443B /* keyfinder */,
+				72DABE12222A28B30067443B /* audioMetadata.swift */,
+				721215902231D83800B9993E /* runningWaveform.swift */,
+				7212158E2231C86E00B9993E /* AudioDisplay.swift */,
+				72121592223B46B800B9993E /* colored_waveform.h */,
+				72121593223B46B800B9993E /* colored_waveform.c */,
+				72554D74224FF9B1001F0E91 /* SCScrollableWaveformView.h */,
+				72554D75224FF9B2001F0E91 /* SCScrollableWaveformView.m */,
+				72554D73224FF9AF001F0E91 /* SCWaveformCache.h */,
+				72554D76224FF9B3001F0E91 /* SCWaveformCache.m */,
+				72554D78224FF9B5001F0E91 /* SCWaveformView.h */,
+				72554D77224FF9B4001F0E91 /* SCWaveformView.m */,
+			);
+			path = MixDJ;
+			sourceTree = "<group>";
+		};
+		726B2E32221F9DA0007F3A64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72BABB1D22504F66003E7906 /* Realm.framework */,
+				72BABB1E22504F66003E7906 /* RealmSwift.framework */,
+				72BABB1F22504F66003E7906 /* Alamofire.framework */,
+				72554D7E225009C4001F0E91 /* AudioKit.framework */,
+				72554D7D225009BB001F0E91 /* AudioKitUI.framework */,
+				72DABD11222604920067443B /* AVFoundation.framework */,
+				72DABD0A222507370067443B /* AudioToolbox.framework */,
+				72DABCF9222477D30067443B /* lame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72DABD84222879850067443B /* keyfinder */ = {
+			isa = PBXGroup;
+			children = (
+				72DABD85222879850067443B /* parameters.cpp */,
+				72DABD87222879850067443B /* chromagram.h */,
+				72DABD8A222879850067443B /* seg.h */,
+				72DABD8B222879850067443B /* toneprofiles.cpp */,
+				72DABD8E222879850067443B /* chromatransform.cpp */,
+				72DABD8F222879850067443B /* segarbitrary.cpp */,
+				72DABD93222879850067443B /* toneprofiles.h */,
+				72DABD95222879850067443B /* keyclassifier.h */,
+				72DABD97222879850067443B /* seg.cpp */,
+				72DABD99222879850067443B /* segcosine.cpp */,
+				72DABD9E222879850067443B /* segnone.h */,
+				72DABD9F222879850067443B /* fftadapter.h */,
+				72DABDA0222879850067443B /* audiodata.cpp */,
+				72DABDA3222879850067443B /* windowfunctions.h */,
+				72DABDA4222879850067443B /* binode.h */,
+				72DABDA6222879850067443B /* README */,
+				72DABDA8222879850067443B /* constants.h */,
+				72DABDAA222879850067443B /* parameters.h */,
+				72DABDAC222879850067443B /* segnone.cpp */,
+				72DABDAD222879850067443B /* fftadapter.cpp */,
+				72DABDAE222879850067443B /* keyfinderresult.h */,
+				72DABDAF222879850067443B /* segcosine.h */,
+				72DABDB1222879850067443B /* lowpassfilter.h */,
+				72DABDB3222879850067443B /* downsampler.h */,
+				72DABDB5222879850067443B /* downsampler.cpp */,
+				72DABDB6222879850067443B /* segarbitrary.h */,
+				72DABDB8222879850067443B /* spectrumanalyser.cpp */,
+				72DABDBC222879850067443B /* chromatransform.h */,
+				72DABDBD222879850067443B /* windowfunctions.cpp */,
+				72DABDBE222879850067443B /* exception.h */,
+				72DABDBF222879850067443B /* keyfinder.h */,
+				72DABDC1222879850067443B /* chromatransformfactory.h */,
+				72DABDC4222879850067443B /* chromagram.cpp */,
+				72DABDC5222879850067443B /* chromatransformfactory.cpp */,
+				72DABDC9222879850067443B /* lowpassfilterfactory.h */,
+				72DABDCB222879850067443B /* keyclassifier.cpp */,
+				72DABDCC222879850067443B /* audiodata.h */,
+				72DABDCE222879850067443B /* lowpassfilterfactory.cpp */,
+				72DABDCF222879850067443B /* keyfinder.cpp */,
+				72DABDD0222879850067443B /* lowpassfilter.cpp */,
+				72DABDD1222879850067443B /* spectrumanalyser.h */,
+			);
+			name = keyfinder;
+			path = "../../../../Downloads/key-tools-0.1/keyfinder";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		726B2E1A221F6F50007F3A64 /* MixDJ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 726B2E2D221F6F52007F3A64 /* Build configuration list for PBXNativeTarget "MixDJ" */;
+			buildPhases = (
+				726B2E17221F6F50007F3A64 /* Sources */,
+				726B2E18221F6F50007F3A64 /* Frameworks */,
+				726B2E19221F6F50007F3A64 /* Resources */,
+				72554D7C225005C1001F0E91 /* ShellScript */,
+				725F0B83225052BF00FD564E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MixDJ;
+			productName = MixDJ;
+			productReference = 726B2E1B221F6F50007F3A64 /* MixDJ.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		726B2E13221F6F50007F3A64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jonathan Silverman";
+				TargetAttributes = {
+					726B2E1A221F6F50007F3A64 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 726B2E16221F6F50007F3A64 /* Build configuration list for PBXProject "MixDJ" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 726B2E12221F6F50007F3A64;
+			productRefGroup = 726B2E1C221F6F50007F3A64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				726B2E1A221F6F50007F3A64 /* MixDJ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		726B2E19221F6F50007F3A64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DABE17222F12750067443B /* MixflameiOS-Background3.png in Resources */,
+				72DABE15222F0C8E0067443B /* MixflameiOS-Background1.png in Resources */,
+				72DABDEB222879850067443B /* README in Resources */,
+				726B2E31221F7046007F3A64 /* Logo.png in Resources */,
+				726B2E29221F6F52007F3A64 /* LaunchScreen.storyboard in Resources */,
+				726B2E26221F6F52007F3A64 /* Assets.xcassets in Resources */,
+				726B2E24221F6F50007F3A64 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72554D7C225005C1001F0E91 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Realm.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		725F0B83225052BF00FD564E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		726B2E17221F6F50007F3A64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DABE13222A28B30067443B /* audioMetadata.swift in Sources */,
+				72DABDE0222879850067443B /* seg.cpp in Sources */,
+				72DABDFE222879850067443B /* chromagram.cpp in Sources */,
+				72DABDDA222879850067443B /* segarbitrary.cpp in Sources */,
+				72DABDEF222879850067443B /* segnone.cpp in Sources */,
+				72554D7B224FF9B5001F0E91 /* SCWaveformView.m in Sources */,
+				72DABDE7222879850067443B /* audiodata.cpp in Sources */,
+				72DABE04222879850067443B /* keyclassifier.cpp in Sources */,
+				72554D7A224FF9B5001F0E91 /* SCWaveformCache.m in Sources */,
+				72DABDD9222879850067443B /* chromatransform.cpp in Sources */,
+				72DABDF4222879850067443B /* downsampler.cpp in Sources */,
+				721215912231D83800B9993E /* runningWaveform.swift in Sources */,
+				72DABDD2222879850067443B /* parameters.cpp in Sources */,
+				72DABE06222879850067443B /* lowpassfilterfactory.cpp in Sources */,
+				72DABE0F2228831F0067443B /* ckey.cpp in Sources */,
+				72DABE08222879850067443B /* lowpassfilter.cpp in Sources */,
+				72DABDD6222879850067443B /* toneprofiles.cpp in Sources */,
+				72DABDF6222879850067443B /* spectrumanalyser.cpp in Sources */,
+				72DABDFF222879850067443B /* chromatransformfactory.cpp in Sources */,
+				72DABE102228831F0067443B /* key.c in Sources */,
+				72554D79224FF9B5001F0E91 /* SCScrollableWaveformView.m in Sources */,
+				72DABDFA222879850067443B /* windowfunctions.cpp in Sources */,
+				72DABDE2222879850067443B /* segcosine.cpp in Sources */,
+				72DABE07222879850067443B /* keyfinder.cpp in Sources */,
+				72121594223B46B800B9993E /* colored_waveform.c in Sources */,
+				726B2E3B22223C3F007F3A64 /* bpm.c in Sources */,
+				7212158F2231C86E00B9993E /* AudioDisplay.swift in Sources */,
+				726B2E21221F6F50007F3A64 /* ViewController.swift in Sources */,
+				72DABDF0222879850067443B /* fftadapter.cpp in Sources */,
+				72DABCF622236E2C0067443B /* soxEncode.m in Sources */,
+				726B2E1F221F6F50007F3A64 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		726B2E22221F6F50007F3A64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				726B2E23221F6F50007F3A64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		726B2E27221F6F52007F3A64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				726B2E28221F6F52007F3A64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		726B2E2B221F6F52007F3A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		726B2E2C221F6F52007F3A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		726B2E2E221F6F52007F3A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLVKKBV9VT;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRC_ROOT)/**",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(SRC_ROOT)/**",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(inherited)/**",
+				);
+				INFOPLIST_FILE = MixDJ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MixDJ",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AudioKit\"",
+					"-framework",
+					"\"AudioKitUI\"",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mixflame.MixDJ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "MixDJ/bpm-BridgingHeader.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+			};
+			name = Debug;
+		};
+		726B2E2F221F6F52007F3A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLVKKBV9VT;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRC_ROOT)/**",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MixDJ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MixDJ",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AudioKit\"",
+					"-framework",
+					"\"AudioKitUI\"",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mixflame.MixDJ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "MixDJ/bpm-BridgingHeader.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		726B2E16221F6F50007F3A64 /* Build configuration list for PBXProject "MixDJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				726B2E2B221F6F52007F3A64 /* Debug */,
+				726B2E2C221F6F52007F3A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		726B2E2D221F6F52007F3A64 /* Build configuration list for PBXNativeTarget "MixDJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				726B2E2E221F6F52007F3A64 /* Debug */,
+				726B2E2F221F6F52007F3A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 726B2E13221F6F50007F3A64 /* Project object */;
+}
